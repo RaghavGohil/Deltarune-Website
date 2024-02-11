@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+@font-face {
+    font-family: pixelFont;
+    src: url(./fonts/pixelfont.ttf);
+}
+
+body
+{
+    font-family: pixelFont;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(255, 234, 0);
+}

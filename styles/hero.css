@@ -1,0 +1,63 @@
+#hero
+{
+    width: 100%;
+    height: 75vh;
+}
+
+#hero img
+{
+    max-height: 100%;
+    width:100%;
+    height: 75vh;
+    position: absolute;
+    z-index:-1;
+    opacity: 0.5;
+    display: block;
+    object-fit: cover;
+}
+
+#hero #header
+{
+    padding-top:200px;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color:white;
+}
+
+#hero #header h1
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#hero #header button
+{
+    padding: 13px;
+    font-family: pixelFont;
+    border-style: solid;
+    border-color: white;
+    color:white;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+#hero #header button:hover
+{
+    animation: hero-zoom 0.5s forwards;
+}
+@keyframes hero-zoom
+{
+    0%
+    {
+        transform: scale(1);
+        border-color: white;
+        color: white;
+    }
+    100%
+    {
+        transform: scale(1.1);
+        border-color: rgb(255, 234, 0);
+        color: rgb(255, 234, 0);
+    }
+}

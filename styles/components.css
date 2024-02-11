@@ -1,0 +1,88 @@
+/*content wrap*/
+
+.section
+{
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*card*/
+
+.card-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card
+{
+    position: relative;
+    width:300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height:auto;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.178);
+    color:rgb(241, 241, 241);
+    transition: transform 0.2s;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+.card img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card #latest-news
+{
+    position:absolute;
+    text-shadow: 2px 2px 4px rgb(59, 56, 24);
+    transform: translate(170px,20px) rotate(13deg);
+    color:rgb(255, 234, 0);
+    animation: news-float 1s infinite ease-in-out;
+    z-index:1;
+}
+
+@keyframes news-float {
+    0% {
+        transform: translate(170px,20px) rotate(13deg);
+    }
+    50% {
+        transform: translate(170px,30px) rotate(13deg);
+    }
+    100% {
+        transform: translate(170px,20px) rotate(13deg);
+    } 
+}
+
+.card #header
+{
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.card #description
+{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    padding: 20px;
+}
+
+.card hr
+{
+    width:70%;
+    border-color: rgb(74, 74, 74);
+    margin: auto;
+}

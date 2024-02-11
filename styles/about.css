@@ -1,0 +1,42 @@
+#about
+{
+    display:flex;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+#about img
+{
+    display:block;
+    width:600px;
+    height:400px;
+    object-fit: cover;
+}
+
+#about hr
+{
+    border-color: rgb(25, 24, 24);
+}
+
+#about #header 
+{
+    text-align: center;
+    font-size: 23px;
+}
+
+#about #text-container
+{
+    margin:auto;
+}
+
+#about #description 
+{
+    line-height: 1.5;
+    font-size: 18px;
+}
