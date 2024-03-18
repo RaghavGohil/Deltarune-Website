@@ -1,12 +1,6 @@
 #about
 {
     display:flex;
-    padding-left:100px;
-    padding-right:100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    display: flex;
     color: white;
     background-color: black;
 }
@@ -14,14 +8,10 @@
 #about img
 {
     display:block;
-    width:600px;
+    width:500px;
     height:400px;
+    border: 2px solid white;
     object-fit: cover;
-}
-
-#about hr
-{
-    border-color: rgb(25, 24, 24);
 }
 
 #about #header 
@@ -33,6 +23,7 @@
 #about #text-container
 {
     margin:auto;
+    margin-left: 50px;
 }
 
 #about #description 

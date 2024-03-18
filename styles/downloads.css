@@ -1,0 +1,39 @@
+#downloads
+{
+    color: white;
+    background-color: black;
+}
+
+#downloads #header 
+{
+    text-align: center;
+    font-size: 23px;
+}
+
+#downloads #text-container
+{
+    margin:auto;
+}
+
+#downloads .version
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#downloads .version > *
+{
+    margin:20px;
+}
+
+#downloads button
+{
+    min-width:200px;
+    height:50px;
+}

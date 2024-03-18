@@ -6,21 +6,22 @@
     <title>Deltarune</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/downloads.css">
     <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="./images/deltarune.png">
             <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="news.html">news</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="downloads.html">downloads</a></li>
-                <li><a href="contact-us.html">contact us</a></li>
+                <li><a href="#news">news</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#downloads">downloads</a></li>
+                <li><a href="#contact-us">contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -28,10 +29,10 @@
         <img src="./images/hero.jpg" alt="hero image">
         <div id="header">
             <h1>The adventure awaits!</h1>
-            <button>Download Now!</button>
+            <button class="generic-button">Download Now!</button>
         </div>
     </section>
-    <section id="news" class="section card-container">
+    <section id="news" class="section card-container scroll-target">
         <div class = "card">
             <h2 id="latest-news">Latest News!</h2>
             <div id="content">
@@ -39,7 +40,7 @@
                 <div id="header">
                     v1.9.2 Update 
                 </div>
-                <hr>
+                <hr class="generic-hr">
                 <div id="description">
                     The v1.9.2 update is now available for download. This update includes a new character, new weapons, and new levels. 
                 </div>
@@ -51,7 +52,7 @@
                 <div id="header">
                     The queen fest is here!
                 </div>
-                <hr>
+                <hr class="generic-hr">
                 <div id="description">
                     The queen fest is now live! Join the queen and her minions in a week-long celebration.
                 </div>
@@ -63,29 +64,62 @@
                 <div id="header">
                     Battle mode fixes.
                 </div>
-                <hr>
+                <hr class="generic-hr">
                 <div id="description">
                     We have fixed the battle mode. The battle mode is now more balanced and fair.
                 </div>
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="section scroll-target">
         <img src="./images/about.jpg" alt="about image">
         <div id = "text-container">
             <div id = "header">
                 <h1>About</h1>
             </div>
             <br>
-            <hr>
+            <hr class="generic-hr">
             <br>
             <div id = "description">
                 This game is a role-playing video game created by Toby Fox. The game is a spin-off of the game Undertale. The game is set in the same universe as Undertale, but it is not a sequel or prequel. The game was released on October 31, 2018 for Microsoft Windows and macOS.
             </div>
         </div>
     </section>
+    <section id="downloads" class="section scroll-target">
+        <div id = "text-container">
+            <div id = "header">
+                <h1>Downloads</h1>
+            </div>
+            <br>
+            <hr class="generic-hr">
+            <br>
+            <div class = "version">
+                <button class="generic-button">v1.9.2</button>
+                <h4>This version continues the story of the Dark World. It includes new characters, new weapons, and new levels.</h4>
+            </div>
+            <div class = "version">
+                <button class="generic-button">v1.9.1</button>
+                <h4>We have added some new features to the game!
+            </div>
+            <h3 style="text-align: right;"><a href="https://thelowendstudio.com">show more -></a></h3>
+        </div>
+    </section>
+    <section id="contact-us" class="section scroll-target">
+        <h1>Contact us</h1>
+        <br>
+        <hr class="generic-hr">
+        <br>
+        <form class="generic-form">
+            <input type="text" placeholder="name"><br>
+            <input type="email" placeholder="email"><br>
+            <textarea type="message" placeholder="message"></textarea><br>
+            <button type="submit" class="generic-button">Submit</button>
+        </form>
+    </section>
     <footer>
-        <h1>© 2020 Deltarune</h1>
+        <hr class="generic-hr">
+        <br>
+        © 2024 Deltarune, Toby Fox Entertainment Inc.
     </footer>
 </body>
 </html>
